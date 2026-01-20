@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>色谱柱产品查询系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .container {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .links {
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        .btn-admin {
+            background: #e74c3c;
+        }
+        .btn-admin:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>色谱柱产品查询系统</h1>
+        <p>欢迎使用色谱柱产品查询系统</p>
+        <p>请选择以下入口：</p>
+        
+        <div class="links">
+            <a href="sales.html" class="btn">
+                <i>🔍</i> 销售查询入口
+            </a>
+            <a href="admin.html" class="btn btn-admin">
+                <i>⚙️</i> 管理员数据管理
+            </a>
+        </div>
+        
+        <div style="margin-top: 40px; color: #666; font-size: 14px;">
+            <p>使用说明：</p>
+            <ol style="text-align: left; max-width: 500px; margin: 20px auto;">
+                <li><strong>销售团队：</strong>点击"销售查询入口"进行产品查询</li>
+                <li><strong>市场部：</strong>点击"管理员数据管理"上传Excel文件</li>
+                <li><strong>数据格式：</strong>Excel文件中每个sheet代表一个产品类型</li>
+                <li><strong>首次使用：</strong>需要市场部上传Excel数据并生成data.json文件</li>
+             </ol>
+        </div>
+    </div>
+</body>
+</html>
